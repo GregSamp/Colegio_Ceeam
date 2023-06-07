@@ -1,0 +1,339 @@
+			
+/* Esportes CSs */
+
+#natacao,
+#volei,
+#futsal, 
+#karate,
+#bale{
+	
+	width: 100%;
+	height: 100%;
+	float: left;
+	padding: 0;
+	text-align: center;
+	margin:5px auto 0;
+}
+
+#futsal {
+	position: relative;
+	top: -90px;
+	
+}
+
+#bale, #karate {
+	position: relative;
+	top: -130px;
+	margin-bottom: -60px;
+}
+
+#bale{
+	margin-bottom: -100px;
+}
+
+.container2 h1
+ {
+	padding: 20px 0;
+	font-size: 2em;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#bale h1{
+	width: 100%;
+	float: left;
+	padding: 20px 0;
+}
+
+#volei {
+	float: left;
+	width: 100%;
+	position: relative;
+	padding: 0;
+	text-align: center;
+}
+
+.container2 {
+	top: 20px;
+	margin: 10px auto;
+	width: 100%;
+	max-width: 1360px;
+	height: 460px;
+	position: relative;
+	top: -25px;
+}
+.container_esportes0 {
+	width: 100%;
+	height: 460px;
+	margin: 150px auto;
+	position: relative;
+	top: -90px;
+}
+
+.container_esportes{
+	width: 100%;
+	height: 460px;
+	margin: 150px auto;
+	position: relative;
+	top: -120px;
+}
+
+.box-item_0{
+	width: 100%;
+	max-width: 470px;
+	height: 460px;
+	margin: 70px auto;
+	position: relative;
+	text-align: center;
+}
+
+.box-item_0 img{
+	width: 100%;
+	height: 100%;
+}
+
+.box-item_0::before {
+	content: "";
+	width: 100%;
+	height: 1%;
+	background: rgb(244, 124, 46);
+	float: right;
+	position: absolute;
+	z-index: -1;
+	top: 20px;
+	right: -1px;
+	opacity: 0;
+	transition: all 0.6s;
+	transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+}
+
+.box-item_0::after {
+	content: "";
+	width: 100%;
+	height: 1%;
+	background: rgb(244, 124, 46);
+	position: absolute;
+	z-index: -1;
+	bottom: -120px;
+	right: -1px;
+	opacity: 0;
+	transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+}
+
+.box-item_0:hover:before,
+.box-item_0:hover:after {
+	transform: translateX(0);
+	-moz-transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-o-transform: translateX(0);
+	opacity: 1;
+}
+
+
+/* O container geral define a perspectiva */
+
+.flip-container {
+	perspective: 700;
+	-webkit-perspective: 700;
+	-o-perspective: 700;
+	-moz-perspective: 700;
+}
+
+
+/* vira os containers frente e verso quando clicar no botão de flip pela classe .flip*/
+
+
+.flip-container.flip .flipper {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+
+
+.flip-container,
+.front,
+.back {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+
+/* define a velocidade da transição */
+
+.flipper {
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transition: 0.8s;
+	-webkit-transition: 0.8s;
+	-o-transition: 0.8s;
+	-moz-transition: 0.8s;
+	position: relative;
+	height: 460px;
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+}
+
+
+/* esconde o verso durante a animação */
+
+.lado {
+	backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+}
+
+
+/* verso inicialmente escondido */
+
+.back {
+	transform: rotateY(180deg);
+	-webkit-transform-style: rotateY(180deg);
+	-o-transform-style: rotateY(180deg);
+	-moz-transform-style: rotateY(180deg);
+	background: rgb(244, 124, 46);
+	max-width: 100%;
+}
+
+.back p {
+	padding: 14px;
+	color: #fff;
+	text-align: justify;
+	font-family: sans-serif;
+	font-size: 15.7px;
+	line-height: 1.3em;
+	font-weight: 700;
+}
+
+.link_inscrever {
+	padding: 5px;
+	background: rgb(56, 57, 140);
+	color: #fff;
+}
+
+
+/* Botão de acionamento do flip pelo javascript */
+
+.botao_flip {
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	color: #fff;
+	padding: 4px;
+	background: rgb(56, 57, 140);
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+	position: relative;
+}
+
+.botao_flip:hover {
+	background: rgb(244, 124, 46);
+	color: #fff;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.botao_flip a,
+.botao_flip a:visited {
+	display: block!important;
+	color: rgb(255, 255, 255)!important;
+	text-decoration: none!important;
+}			
+	/* Media querys */
+	
+	@media screen and (max-width: 320px) {
+		.back p.texto_futsal, .back p.texto_judo, .back p.texto_hidro {
+			font-size: 12.3px;
+		}
+	}
+
+	@media screen and (min-width: 321px) {
+		.back p.texto_futsal, .back p.texto_judo, .back p.texto_hidro {
+			font-size: 13.3px;
+		}
+	}
+	
+	@media screen and (min-width: 420px) {
+		.back p.texto_futsal, .back p.texto_judo, .back p.texto_hidro {
+			font-size: 15.35px;
+		}
+	}
+    @media screen and (min-width: 640px) {
+		.container_esportes0 {
+			top: -60px;
+		}
+	}
+	
+	@media screen and (min-width: 960px) {
+		.container2 {
+			margin: 10px auto;
+			max-width: 1350px;
+			top: 20px;
+		}
+		.container_esportes0, .container_esportes {
+			float: left;
+			width: 48%;
+			margin: 10% 1%;
+			top: -85px;
+		}
+		
+		.container_esportes {
+			top: -120px;
+		}
+		
+		#volei {
+			top: 55px;
+		}
+		
+		#futsal {
+			top: 35px;
+		}
+		
+		#karate{
+			top: 120px;
+			margin-bottom: 330px;
+		}
+		#bale {
+			
+			margin-bottom: 90px;
+		}
+		.back p.texto_futsal,  .back p.texto_judo, .back p.texto_hidro{
+			font-size: 15.7px;
+		}
+	}
+	
+	@media screen and (min-width: 1350px) {
+		.container_esportes {
+			float: left;
+			width: 33%;
+			margin: 9% 0.1%;
+		}
+		
+		.container_esportes0 {
+			width: 50%;
+			margin: 4% 0;
+		}
+	}

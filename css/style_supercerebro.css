@@ -1,0 +1,201 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+/* Google webfont Styles */
+
+@import url('font-awesome.css');
+
+/* Font Awesome Styles */
+
+/* Estilo geral */
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+
+/* banner */
+
+.parallax_mobile_2_1 {
+	display: none;
+}
+
+.parallax_mobile_2 {
+	width: 100%;
+	margin: 0 auto 1%;
+
+}
+
+.parallax_mobile_2 img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.parallax_mobile_3 {
+	width: 100%;
+	margin: auto;
+	width: 100%;
+
+}
+
+.parallax_mobile_3 img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+	.container {
+		top: 30px;
+	}
+
+}
+
+/* Sobre super cerebro*/
+
+.container_sobre_2 {
+	width: 100%;
+	margin: auto;
+	max-width: 975px;
+}
+
+
+/* Sessão Videos */
+
+.apresentacao_04 {
+	float: left;
+	width: 100%;
+	z-index: 99999;
+	margin-top: 2%;
+	margin-bottom: 4%;
+}
+
+.chamada_video {
+	float: left;
+	width: 100%;
+	margin: 1% 0 0;
+	height: 100%;
+	align-items: center;
+	background: rgb(56, 57, 140);
+	padding: 5px 0;
+}
+
+.box-item_videos {
+	width: 99%;
+	margin: 0.5%;
+}
+
+.video {
+	height: 200px;
+}
+
+.form {
+	height: 822px;
+}
+
+.box-item_videos img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.chamada_video i {
+	float: left;
+	color: #fff;
+	font-size: 40px;
+	margin: 0 1%;
+	max-width: 10%;
+}
+
+.chamada_video h2 {
+	float: left;
+	color: #fff;
+	margin: 0.5% 2%;
+	width: 84%;
+	font-size: 15px;
+}
+
+
+@media screen and (min-width: 680px) {
+	.parallax_mobile_2_1 {
+		display: block;
+		width: 100%;
+		margin: auto;
+		max-width: 975px;
+		margin-top: 40px;
+		margin-bottom: -10px;
+	}
+	.parallax_mobile_2_1 img {
+		width: 100%;
+		height: 100%;
+		max-width: 100%;
+	}
+	.parallax_mobile_2 {
+		display: none;
+
+	}
+
+	.parallax_mobile_3 {
+		display: none;
+
+	}
+
+}
+
+@media screen and (min-width: 720px) {
+	.coluna_videos {
+		width: 32%;
+		float: left;
+		margin: 0.5% 0.5% 0.5% 0;
+	}
+	.box-item_videos {
+		width: 100%;
+	}
+	.box-item_form {
+		width: 100%;
+	}
+	.coluna_form {
+		width: 67%;
+		float: left;
+		margin: 0.5% 0 0.5% 0.5%;
+	}
+	.chamada_video h2 {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.video {
+		height: 340px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.chamada_video h2 {
+		font-size: 13px;
+	}
+	.chamada_video i {
+		font-size: 30px;
+	}
+}
