@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Gregory Sampaio Costa">
+	<title>Ceeam - Infantil 5</title>
+	<link rel="shortcut icon" href="img/logo.png" />
+	<!-- Folha de estilos gerais -->
+	<link href="css/style_infantil_5.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!--Folhas de estilo fontes dos icones redes sociais-->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- jQuery plugins -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<!-- Modernizr é uma pequena biblioteca Javascript que detecta a disponibilidade das novas características do HTML5 e CSS3 nos browsers.Ex: Animações em geral  -->
+	<script src="js/modernizr.custom.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.js"></script>
+	<!--Função do Script para slideres-->
+	<script>
+		$(document).ready(function() {
+			$('.bxslider').bxSlider();
+		});
+	</script>
+	<!-- função para efeito parallax scroll nas imagens fixas -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.parallax').each(function() {
+				var $obj = $(this);
+				$(window).scroll(function() {
+					var yPos = -($(window).scrollTop() / $obj.data('speed'));
+
+					var bgpos = '50%' + yPos + 'px';
+
+					$obj.css('background-position', bgpos);
+				});
+			});
+		});
+	</script>
+
+</head>
+
+<body id="home">
+	<!-- Adicionar id ao topo para que função de scrool funcione, ancorando com o primeiro li (home)-->
+	<header id="menuHeader" class="header">
+
+		<div class="container_menu">
+			<div>
+				<nav class="menu">
+					<div id="dl-menu" class="dl-menuwrapper">
+						<button class="dl-trigger">Open Menu</button>
+						<ul class="dl-menu">
+							<!-- A classe scroll serve para que o background do menu percorra automaticamente assim que o úsuario navegar pelas sessões, acrescentar o mesmo id do body, para que não haja problema na função -->
+							<li class="scroll1"><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+							<li class="scroll1 active"><i class="fa fa-child"></i><a href="#sobre">Infantil 5</a></li>
+							<li><i class="fa fa-calendar"></i><a href="">Calendário</a></li>
+							<li class="scroll0"><i class="fa fa-laptop"></i><a href="">Aluno online</a></li>
+							<li><i class="fa fa-question-circle"></i><a href="">Enquetes</a></li>
+							<li><i class="fa fa-calendar-check-o"></i><a href="">Matricule-se</a>
+								<!-- Submenu em comentario pra que seja usado ou não -->
+								<!--<ul class="dl-submenu">
+						     <li><a href="calendario.html#area_ens_infantil">Ensino infantil</a></li>
+							 <li><a href="calendario.html#area_ens_fundamental">Ensino fundamental</a></li>
+							 <li><a href="calendario.html#area_ens_medio">Ensino médio</a></li>
+						  </ul>-->
+							</li>
+							<li><i class="fa fa-users"></i><a href="#">Equipe pedagógica</a>
+								<!-- Submenu em comentario pra que seja usado ou não -->
+								<!-- <ul class="dl-submenu">
+						     <li><a href="portfolio2.html">Curso 1</a></li>
+							 <li><a href="portfolio3.html">Curso 2</a></li>
+							 <li><a href="portfolio4.html">Curso 3</a></li>
+						  </ul>-->
+							</li>
+							<li><i class="fa fa-video-camera"></i><a href="galeria_videos.html">Galeria de videos</a></li>
+							<li><i class="fa fa-camera"></i><a href="galeria_fotos.html">Galeria de fotos</a></li>
+							<li><i class="fa fa-map-marker"></i><a href="https://www.google.com.br/maps/place/Centro+Educacional+Evandro+Ayres+de+Moura/@-3.7678411,-38.6101307,17.25z/data=!4m5!3m4!1s0x7c74c7dc3cb9209:0xe91b41f8aa62f574!8m2!3d-3.76779!4d-38.608239" target="_blank">Localização</a></li>
+							<li><i class="fa fa-phone-square"></i><a href="#contatos">Contatos</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- /.menu -->
+			</div>
+		</div>
+
+	</header>
+	<!--  section banner-->
+	<section>
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png" alt=""></a>
+		</div>
+		<div class="parallax_mobile">
+			<img src="img/infantil/infantil_5/banner_infantil_5.jpeg" alt="">
+		</div>
+	</section>
+	<!--Sessão Destaques-->
+	<section id="integral" class="apresentacao_sistemas">
+
+		<div class="container_sobre">
+			<p class="texto_principal azul titulo">Educação Infantil V - Identidade e Socialização </p>
+			<p class="texto_principal">Nesta faixa etária, os vínculos das crianças com seus colegas se ampliam e alcançam a turma. Esta convivência social mais intensa gera situações de conflito e disputa, mediadas pela professora que incentiva o uso da linguagem verbal. As crianças passam, então, a reconhecer o valor dos "combinados" (acordos coletivos) e são implacáveis na fiscalização dos colegas que os transgridem, mesmo que se esqueçam, elas mesmas, muitas vezes de cumpri-los. Ações como dividir, esperar e negociar passam a ser exigências do dia a dia escolar. Ao longo do ano, as crianças vão aprendendo que o desejo individual está subordinado às possibilidades da vida coletiva e que, longe de se tratar de uma perda, participar de uma rede social inclui, principalmente, vivências de companheirismo, solidariedade, reciprocidade e respeito. À segurança e confiança que estabelecem com os colegas, soma-se a reverência que as crianças demonstram pelo saber da professora, representante do vasto mundo de conhecimentos que tanto as atraem e amedrontam. As crianças passam a perceber que, ao contrário do que pensavam anteriormente, não sabem tudo e há muitas coisas para aprender. É comum que digam que não sabem ler, não sabem contar, não sabem desenhar determinada figura... Cabe à professora estimulá-las a fim de que se arrisquem e empenhem-se para conquistar o que ainda não sabem. A evolução das crianças nas aprendizagens formais depende, em grande parte, do quanto elas sentem-se seguras para expressar o que já sabem, refletir e discutir sobre os modos de saber mais.
+			</p>
+			<div class="linha_4">
+				<div class="coluna_4">
+					<div class="box-item_slide02">
+						<img src="img/infantil/infantil_5/infantil_5.jpeg" alt="">
+					</div>
+				</div>
+
+				<div class="coluna_4_1">
+					<div class="textos_2_2_1">
+						<p class="azul">Veja abaixo álbum de fotos e a vivência das práticas escolares.</p>
+
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/sexta_saudavel.jpeg" alt="">
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/Uno.jpeg" alt="">
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/projeto_literatura.jpeg" alt="">
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/hidrorecreativa.jpeg" alt="">
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/psicomotora.jpeg" alt="">
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/material_individual.jpeg" alt="">
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/calendario_escolar.jpeg" alt="">
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/horario_aula.jpeg" alt="">
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/aula_de_campo.jpeg" alt="">
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/hora_leitura.jpeg" alt="">
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/aula_de_musica.jpeg" alt="">
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/corpo_docente.jpeg" alt="">
+					</div>
+					<div class="box-item_integral">
+						<img src="img/infantil/infantil_2/aula_de_ingles.jpeg" alt="">
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<!----Direitos autorais--->
+	<footer id="contatos" class="rodape">
+		<ul class="social-icons">
+			<li><i class="fa fa-commenting-o"></i><a href="" target="_blank">Depoimentos</a></li>
+
+			<li><i class="fa fa-facebook"></i><a href="https://www.facebook.com/ceeamoficial/" target="_blank">Facebook</a></li>
+
+			<li><i class="fa fa-instagram"></i><a href="https://www.instagram.com/ceeam_oficial/" target="_blank">Instagram</a></li>
+
+			<li><i class="fa fa-youtube-play"></i><a href="https://www.youtube.com/channel/UCXjl65zQBiP3zaWTP6EKNrw/featured?view_as=subscriber" target="_blank">YouTube</a></li>
+		</ul>
+		<a href="#home" class="VoltarTopo"></a>
+	</footer>
+	<div class="copyright">
+		&copy; Criado por <a href="http://www.divulgarce.com.br/" target="_blank">DivulgarCE</a> e Desenvolvido por: <a href="https://www.facebook.com/gregory.sampaio.54" target="_blank">Gregory Sampaio Costa.</a> Todos os direitos reservados.
+
+	</div>
+
+	<!--Javascripts-->
+	<!-- JavaScript menu -->
+	<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+	<script type="text/javascript" src="js/script_menu.js"></script>
+	<!-- Função do script para scroll dos li do menu, background passando de li para li através das sessões -->
+	<script src="js/scroll_menu.js"></script>
+	<!--Função do Script para fazer desaparecer e aparcecer botão subir para o topo-->
+	<script>
+		$(document).ready(function() {
+			//Clicar e percorrer suave até o topo
+			$('.VoltarTopo').click(function() {
+				$('html, body').animate({
+					scrollTop: 0
+				}, 1000);
+				return false;
+			});
+		});
+	</script>
+</body>
+
+</html>

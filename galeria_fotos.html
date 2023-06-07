@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Gregory Sampaio Costa">
+    <title>Ceeam - Galeria de fotos</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/logo.png" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style_galerias/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style_galerias/style_galeria.css">
+    <link rel="stylesheet" href="css/style_galerias/tema_galeria.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js"><\/script>')
+    </script>
+    <script src="js/galerias/vendor/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="bg-overlay"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-12">
+                <div id="home" class="sidebar-menu">
+
+                    <div class="logo-wrapper">
+                        <h1 class="">
+                            <a href="galeria_fotos.html"><img src="img/gallery/logo_ceeam.png" alt="Galeria Ceeam">
+								<span>Galeria de Fotos</span></a>
+                        </h1>
+                        <p id="introducao_galeria">(escolha um item e veja as fotos abaixo)</p>
+                    </div>
+                    <!-- /.logo-wrapper -->
+
+                    <div class="menu-wrapper">
+                        <ul class="menu">
+                            <li><a class="show-1" href="#">Nossa escola</a></li>
+                            <li><a class="toggle-menu_2" href="#">Educação Infantil</a>
+                                <ul class="menu_2">
+                                    <li><a class="show-2" href="#">Infantil I</a></li>
+                                    <li><a class="show-2" href="#">Infantil II</a></li>
+                                    <li><a class="show-2" href="#"> Infantil III</a></li>
+                                    <li><a class="show-2" href="#"> Infantil IV</a></li>
+                                    <li><a class="show-2" href="#"> Infantil V</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="toggle-menu_3" href="#">Ensino fundamental</a>
+                                <ul class="menu_3">
+                                    <li><a class="show-3" href="#">Fundamental I</a></li>
+                                    <li><a class="show-3" href="#">Fundamental II</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="show-4" href="#">Ensino médio</a></li>
+                            <li><a class="show-5" href="#">Esportes</a></li>
+
+                            <li><a href="galeria_videos.html">Galeria de videos</a></li>
+                            <li><a href="index.html">Home</a></li>
+                        </ul>
+                        <!-- /.menu -->
+                        <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <!-- /.menu-wrapper -->
+
+                    <!--Arrow Navigation-->
+                    <a id="prevslide" class="load-item"><i class="fa fa-angle-left"></i></a>
+                    <a id="nextslide" class="load-item"><i class="fa fa-angle-right"></i></a>
+
+                </div>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.col-md-4 -->
+
+            <div class="col-md-8">
+
+                <div id="menu-container">
+
+                    <div id="menu-1" class="gallery content">
+                        <div class="row">
+
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g1.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g1.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g2.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g2.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g3.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g3.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g4.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g4.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g5.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g5.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g6.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g6.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g7.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g7.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g8.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g8.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g9.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g9.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.gallery -->
+                    <div id="menu-2" class="gallery content">
+                        <div class="row">
+
+
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g7.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g7.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g8.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g8.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g9.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g9.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g1.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g1.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g2.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g2.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g3.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g3.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g4.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g4.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g5.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g5.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g6.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g6.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.gallery -->
+
+
+                    <div id="menu-3" class="gallery content">
+                        <div class="row">
+
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g1.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g1.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g2.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g2.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g3.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g3.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g4.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g4.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g5.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g5.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g6.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g6.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g7.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g7.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g8.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g8.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g9.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g9.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.gallery -->
+
+                    <div id="menu-4" class="gallery content">
+                        <div class="row">
+
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g7.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g7.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g8.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g8.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g9.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g9.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g1.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g1.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g2.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g2.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g3.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g3.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g4.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g4.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g5.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g5.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g6.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g6.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                        </div>
+                        <!-- /.row -->
+                    </div>
+
+                    <div id="menu-5" class="gallery content">
+                        <div class="row">
+
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g7.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g7.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g8.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g8.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g9.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g9.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g1.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g1.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g8.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g8.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g9.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g9.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="img/gallery/g1.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="img/gallery/g1.jpg">
+										<span><i class="fa fa-search-plus"></i></span>
+									</a>
+                                </div>
+                                <!-- /.g-item -->
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.gallery -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+
+    <script src="js/galerias/plugins.js"></script>
+    <script src="js/galerias/main.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+
+            $.supersized({
+
+                // Functionality
+                slide_interval: 3000, // Length between transitions
+                transition: 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                transition_speed: 700, // Speed of transition
+
+                // Components                           
+                slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                slides: [ // Slideshow img
+                    {
+                        image: 'img/gallery/background_1.jpg'
+                    }, {
+                        image: 'img/gallery/background_2.jpg'
+                    }, {
+                        image: 'img/gallery/background_3.jpg'
+                    }
+                ]
+
+            });
+        });
+    </script>
+    <!--Função do Script para fazer desaparecer e aparcecer botão subir para o topo-->
+    <script>
+        $(document).ready(function() {
+            //Clicar e percorrer suave até o topo
+            $('.VoltarTopo').click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

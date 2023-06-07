@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="robots" content="index,follow">
+	<meta name="author" content="Gregory Sampaio Costa">
+	<title>Ceeam - Esportes</title>
+	<link rel="shortcut icon" href="img/logo.png" />
+	<!-- Folha de estilos gerais -->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style_esportes.css" rel="stylesheet">
+	<!-- Folha de estilos do livro -->
+	<link href="css/style_livro/jquery.jscrollpane.custom.css" rel="stylesheet" />
+	<link href="css/style_livro/bookblock.css" rel="stylesheet" />
+	<link href="css/style_livro/custom.css" rel="stylesheet" />
+	<!--Folhas de estilo fontes dos icones redes sociais-->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- jQuery plugins -->
+	<script src="js/livro/jquery_livro.js"></script>
+	<!-- Modernizr é uma pequena biblioteca Javascript que detecta a disponibilidade das novas características do HTML5 e CSS3 nos browsers.Ex: Animações em geral  -->
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/livro/modernizr.custom.79639.js"></script>
+	<!-- função para efeito parallax scroll nas imagens fixas -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.parallax').each(function() {
+				var $obj = $(this);
+				$(window).scroll(function() {
+					var yPos = -($(window).scrollTop() / $obj.data('speed'));
+
+					var bgpos = '50%' + yPos + 'px';
+
+					$obj.css('background-position', bgpos);
+				});
+			});
+		});
+	</script>
+
+</head>
+
+<body id="home">
+	<!-- Adicionar id ao topo para que função de scrool funcione, ancorando com o primeiro li (home)-->
+	<header id="menuHeader" class="header">
+
+		<div class="container_menu">
+			<div>
+				<nav class="menu">
+					<div id="dl-menu" class="dl-menuwrapper">
+						<button class="dl-trigger">Open Menu</button>
+						<ul class="dl-menu">
+							<!-- A classe scroll serve para que o background do menu percorra automaticamente assim que o úsuario navegar pelas sessões, acrescentar o mesmo id do body, para que não haja problema na função -->
+							<li class="scroll1"><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+							<li class="scroll1 active"><i class="fa fa-futbol-o"></i><a href="esportes.html">Esportes</a></li>
+							<li><i class="fa fa-calendar"></i><a href="">Calendário</a></li>
+							<li class="scroll0"><i class="fa fa-laptop"></i><a href="">Aluno online</a></li>
+							<li><i class="fa fa-question-circle"></i><a href="">Enquetes</a></li>
+							<li><i class="fa fa-calendar-check-o"></i><a href="">Matricule-se</a>
+								<!-- Submenu em comentario pra que seja usado ou não -->
+								<!--<ul class="dl-submenu">
+						     <li><a href="calendario.html#area_ens_infantil">Ensino infantil</a></li>
+							 <li><a href="calendario.html#area_ens_fundamental">Ensino fundamental</a></li>
+							 <li><a href="calendario.html#area_ens_medio">Ensino médio</a></li>
+						  </ul>-->
+							</li>
+							<li><i class="fa fa-users"></i><a href="#">Equipe pedagógica</a>
+								<!-- Submenu em comentario pra que seja usado ou não -->
+								<!-- <ul class="dl-submenu">
+						     <li><a href="portfolio2.html">Curso 1</a></li>
+							 <li><a href="portfolio3.html">Curso 2</a></li>
+							 <li><a href="portfolio4.html">Curso 3</a></li>
+						  </ul>-->
+							</li>
+							<li><i class="fa fa-video-camera"></i><a href="">Galeria de videos</a></li>
+							<li><i class="fa fa-camera"></i><a href="galeria_fotos.html">Galeria de fotos</a></li>
+							<li><i class="fa fa-map-marker"></i><a href="https://www.google.com.br/maps/place/Centro+Educacional+Evandro+Ayres+de+Moura/@-3.7678411,-38.6101307,17.25z/data=!4m5!3m4!1s0x7c74c7dc3cb9209:0xe91b41f8aa62f574!8m2!3d-3.76779!4d-38.608239" target="_blank">Localização</a></li>
+							<li><i class="fa fa-phone-square"></i><a href="#rodape">Contatos</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- /.menu -->
+			</div>
+		</div>
+
+	</header>
+	<!--  section banner-->
+	<section id="natacao">
+		<div class="container2">
+			<div class="container_esportes0">
+				<div class="box-item_0">
+					<h1>Natação </h1>
+					<div class="flip-container" id="flip-toggle0">
+						<div class="flipper">
+							<div class="front lado">
+								<img src="img/esportes/natacao.jpeg" alt="">
+							</div>
+							<div class="back lado">
+								<p>Escolinha de Esportes CEEAM - Natação <br><br> Além De Ser Um Dos Esportes Mais Completos, A Natação É Uma Forma Divertida, Saudável E Desafiadora De Se Exercitar Por Ser Praticada Na Água, Despertando Uma Sensação De Prazer E Bem-Estar. <br><br> Terça e Quinta - R$ 50,00<br> Segunda, Quarta e Sexta - R$ 56,00 <br> Segunda a Sexta - R$ 67,00
+									<br><br><a class="link_inscrever" href="http://bit.ly/EscolinhadeEsportesCEEAM" target="_blank">Inscreva-se</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="botao_flip">
+						<a onclick="document.querySelector('#flip-toggle0').classList.toggle('flip');">Saiba +</a>
+					</div>
+				</div>
+			</div>
+			<div id="hidro" class="container_esportes0">
+				<div class="box-item_0">
+					<h1>Hidroginástica </h1>
+					<div class="flip-container" id="flip-toggle1">
+						<div class="flipper">
+							<div class="front lado">
+								<img src="img/esportes/hidroginastica.jpeg" alt="">
+							</div>
+							<div class="back lado">
+								<p class="texto_hidro">Escolinha de Esportes CEEAM - Hidroginástica <br><br> A hidroginástica é um exercício aeróbico leve que pode ser adotado por todos, independente da faixa etária. Com o intuito de melhorar a capacidade cardiorrespiratória, muitas pessoas buscam na hidroginástica, uma alternativa de um programa de exercícios satisfatório e relaxante, sendo então procurado por pessoas de diferentes idades e não somente idosos. Além da melhora no desempenho cardiorrespiratório, o aluno adquiri resistência muscular, força e flexibilidade, além de tratar diferentes tipos de lesões e ser muito indicada durante a gestação. <br><br> Terça e Quinta - R$ 50,00<br> Segunda,Quarta e Sexta - R$ 56,00<br> Segunda a Sexta - R$ 67,00
+									<br><br><a class="link_inscrever" href="http://bit.ly/EscolinhadeEsportesCEEAM" target="_blank">Inscreva-se</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="botao_flip">
+						<a onclick="document.querySelector('#flip-toggle1').classList.toggle('flip');">Saiba +</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="volei">
+		<div class="container2">
+			<div class="container_esportes">
+				<div class="box-item_0">
+					<h1>Vôlei </h1>
+					<div class="flip-container" id="flip-toggle2">
+						<div class="flipper">
+							<div class="front lado">
+								<img src="img/esportes/volei.jpeg" alt="">
+							</div>
+							<div class="back lado">
+								<p>Escolinha de Esportes CEEAM - Vôlei <br><br> O voleibol pode ser uma perfeita escolha para uma atividade extraescolar ou uma atividade recreativa. É um esporte versátil, ideal para ser praticado por um numeroso grupo de crianças, estimulando sua educação e o trabalho em grupo, ao mesmo tempo em que se divertem. <br><br><br> Vôlei - de 6 a 9 anos - Terça e Quinta R$ 50,00
+									<br><br><a class="link_inscrever" href="http://bit.ly/EscolinhadeEsportesCEEAM" target="_blank">Inscreva-se</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="botao_flip">
+						<a onclick="document.querySelector('#flip-toggle2').classList.toggle('flip');">Saiba +</a>
+					</div>
+				</div>
+			</div>
+			<div class="container_esportes">
+				<div class="box-item_0">
+					<h1>Vôlei FIT</h1>
+					<div class="flip-container" id="flip-toggle3">
+						<div class="flipper">
+							<div class="front lado">
+								<img src="img/esportes/volei.jpeg" alt="">
+							</div>
+							<div class="back lado">
+								<p>Escolinha de Esportes CEEAM - Vôlei <br><br> O voleibol pode ser uma perfeita escolha para uma atividade extraescolar ou uma atividade recreativa. É um esporte versátil, ideal para ser praticado por um numeroso grupo de crianças, estimulando sua educação e o trabalho em grupo, ao mesmo tempo em que se divertem. <br><br> Vôlei FIT - Terça e Quinta - R$ 50,00
+									<br><br><a class="link_inscrever" href="http://bit.ly/EscolinhadeEsportesCEEAM" target="_blank">Inscreva-se</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="botao_flip">
+						<a onclick="document.querySelector('#flip-toggle3').classList.toggle('flip');">Saiba +</a>
+					</div>
+				</div>
+			</div>
+			<div class="container_esportes">
+				<div class="box-item_0">
+					<h1>Vôlei Adulto </h1>
+					<div class="flip-container" id="flip-toggle4">
+						<div class="flipper">
+							<div class="front lado">
+								<img src="img/esportes/volei.jpeg" alt="">
+							</div>
+							<div class="back lado">
+								<p>Escolinha de Esportes CEEAM - Vôlei <br><br> O voleibol pode ser uma perfeita escolha para uma atividade extraescolar ou uma atividade recreativa. É um esporte versátil, ideal para ser praticado por um numeroso grupo de crianças, estimulando sua educação e o trabalho em grupo, ao mesmo tempo em que se divertem. <br><br> Vôlei Adulto - Terça e Quinta - R$ 50,00
+									<br><br><a class="link_inscrever" href="http://bit.ly/EscolinhadeEsportesCEEAM" target="_blank">Inscreva-se</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="botao_flip">
+						<a onclick="document.querySelector('#flip-toggle4').classList.toggle('flip');">Saiba +</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="futsal">
+		<div class="container2">
+			<div class="container_esportes0">
+				<div class="box-item_0">
+					<h1>Futsal</h1>
+					<div class="flip-container" id="flip-toggle5">
+						<div class="flipper">
+							<div class="front lado">
+								<img src="img/esportes/futsal.jpeg" alt="">
+							</div>
+							<div class="back lado">
+								<p class="texto_futsal">Escolinha de Esportes CEEAM - Futsal <br><br> Hoje, a prática do esporte está na moda entre as crianças. A atividade física regular já faz parte do dia a dia das crianças e de muitas famílias. O esporte é importante para a saúde e para o bem-estar de todos. Para a criança pode ser um fator fundamental importante de desenvolvimento e crescimento, desde que contribua de forma positiva para o seu físico e para a sua mente. Os especialistas recomendam a prática do esporte de uma maneira equilibrada, respeitando as capacidades e as habilidades motoras de cada criança. O esporte não deve ser imposto nem visto como obrigação ou como imposição do desejo dos pais de transformar seus filhos em atletas. Mas temos que levar em conta que a criança, sobretudo, tem que se divertir.<br><br> Quarta e Sexta R$ 50,00
+									<br><br><a class="link_inscrever" href="http://bit.ly/EscolinhadeEsportesCEEAM" target="_blank">Inscreva-se</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="botao_flip">
+						<a onclick="document.querySelector('#flip-toggle5').classList.toggle('flip');">Saiba +</a>
+					</div>
+				</div>
+			</div>
+			<div id="basquete" class="container_esportes0">
+				<div class="box-item_0">
+					<h1>Basquete</h1>
+					<div class="flip-container" id="flip-toggle6">
+						<div class="flipper">
+							<div class="front lado">
+								<img src="img/esportes/basquete.jpg" alt="">
+							</div>
+							<div class="back lado">
+								<p>Escolinha de Esportes CEEAM - Basquete <br><br> O basquete é um esporte muito divertido e dinâmico. Afasta a criança do sedentarismo e lhe proporciona segurança em si mesma e também promove uma boa autoestima. Com todas essas vantagens, é possível que o basquetebol seja um dos esportes ideais para as crianças.<br><br> Terça e Quinta - Grátis Aluno Ceeam e R$ 50,00 Não Aluno
+									<br><br><a class="link_inscrever" href="http://bit.ly/EscolinhadeEsportesCEEAM" target="_blank">Inscreva-se</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="botao_flip">
+						<a onclick="document.querySelector('#flip-toggle6').classList.toggle('flip');">Saiba +</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="karate">
+		<div class="container2">
+			<div class="container_esportes0">
+				<div class="box-item_0">
+					<h1>Karatê</h1>
+					<div class="flip-container" id="flip-toggle7">
+						<div class="flipper">
+							<div class="front lado">
+								<img src="img/esportes/karate.jpg" alt="">
+							</div>
+							<div class="back lado">
+								<p>Escolinha de Esportes CEEAM - Karatê <br><br> Além da utilidade como método de defesa pessoal, o karatê é um dos esportes mais completos física e mentalmente que os pais podem matricular os filhos. Os meninos e as meninas se divertem enquanto aprendem disciplina, tolerância e respeito e ainda ajuda no desenvolvimento ósseo e muscular.<br><br> Terça e Quinta R$ 50,00
+									<br><br><a class="link_inscrever" href="http://bit.ly/EscolinhadeEsportesCEEAM" target="_blank">Inscreva-se</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="botao_flip">
+						<a onclick="document.querySelector('#flip-toggle7').classList.toggle('flip');">Saiba +</a>
+					</div>
+				</div>
+			</div>
+			<div class="container_esportes0">
+				<div class="box-item_0">
+					<h1>Judô</h1>
+					<div class="flip-container" id="flip-toggle8">
+						<div class="flipper">
+							<div class="front lado">
+								<img src="img/esportes/judo.jpg" alt="">
+							</div>
+							<div class="back lado">
+								<p class="texto_judo">Escolinha de Esportes CEEAM - Judô <br><br> O judô é uma arte marcial suave que usa o corpo como uma alavanca para envolver e imobilizar o adversário, utilizando a força do outro em benefício próprio. Uma das leis desta luta é fazer o mínimo esforço para a máxima eficiência. Nesta arte japonesa não é permitido empurrar, chutar nem dar socos. O judoca derruba o adversário segurando-o pelo quimono. Um dos grandes benefícios do judô, em que o praticamente cai bastante, é aprender a ir ao chão sem se machucar. Aliás, o judô ensina primeiro a cair e depois a derrubar o adversário. Não existe uma idade limite para se iniciar no judô, mas quanto antes, melhor, pois o aprendizado é para toda a vida. O caminho a percorrer é longo.<br><br> Segunda e Quarta - R$ 56,00
+									<br><br><a class="link_inscrever" href="http://bit.ly/EscolinhadeEsportesCEEAM" target="_blank">Inscreva-se</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="botao_flip">
+						<a onclick="document.querySelector('#flip-toggle8').classList.toggle('flip');">Saiba +</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="bale">
+		<div class="container2">
+			<div class="container_esportes0">
+				<div class="box-item_0">
+					<h1>Ballet </h1>
+					<div class="flip-container" id="flip-toggle9">
+						<div class="flipper">
+							<div class="front lado">
+								<img src="img/esportes/ballet.jpg" alt="">
+							</div>
+							<div class="back lado">
+								<p>Escolinha de Esportes CEEAM - Ballet <br><br> O ballet é uma dança que exige movimentos amplos e precisos e membros muito bem alongados, pois a flexibilidade é um componente essencial para uma técnica perfeita. A flexibilidade é um benefício muito importante para o corpo, pois previne dores e encurtamento muscular e ainda promove fortalecimento.<br><br> Segunda e Quarta -R$ 50,00
+									<br><br><a class="link_inscrever" href="http://bit.ly/EscolinhadeEsportesCEEAM" target="_blank">Inscreva-se</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="botao_flip">
+						<a onclick="document.querySelector('#flip-toggle9').classList.toggle('flip');">Saiba +</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="rodape">
+		<!----Direitos autorais--->
+		<footer class="rodape">
+			<ul class="social-icons">
+				<li><i class="fa fa-commenting-o"></i><a href="" target="_blank">Depoimentos</a></li>
+
+            <li><i class="fa fa-facebook"></i><a href="https://www.facebook.com/ceeamoficial/" target="_blank">Facebook</a></li>
+
+            <li><i class="fa fa-instagram"></i><a href="https://www.instagram.com/ceeam_oficial/" target="_blank">Instagram</a></li>
+
+            <li><i class="fa fa-youtube-play"></i><a href="https://www.youtube.com/channel/UCXjl65zQBiP3zaWTP6EKNrw/featured?view_as=subscriber" target="_blank">YouTube</a></li>
+			</ul>
+			<a href="#home" class="VoltarTopo"></a>
+		</footer>
+		<div class="copyright">
+			&copy; Criado por <a href="http://www.divulgarce.com.br/" target="_blank">DivulgarCE</a> e Desenvolvido por: <a href="https://www.facebook.com/gregory.sampaio.54" target="_blank">Gregory Sampaio Costa.</a> Todos os direitos reservados.
+
+		</div>
+	</section>
+	<!--Javascripts-->
+	<!-- JavaScript menu -->
+	<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+	<script type="text/javascript" src="js/script_menu.js"></script>
+	<!-- Função do script para scroll dos li do menu, background passando de li para li através das sessões -->
+	<script src="js/scroll_menu.js"></script>
+	<!-- Livro -->
+	<script src="js/livro/jquery.jscrollpane.min.js"></script>
+	<script src="js/livro/jquery.bookblock.js"></script>
+	<script src="js/livro/page.js"></script>
+	<script src="js/livro/jquery.mousewheel.js"></script>
+
+	<script>
+		$(function() {
+
+			Page.init();
+
+		});
+	</script>
+	<!--Função do Script para fazer desaparecer e aparcecer botão subir para o topo-->
+	<script>
+		$(document).ready(function() {
+			//Clicar e percorrer suave até o topo
+			$('.VoltarTopo').click(function() {
+				$('html, body').animate({
+					scrollTop: 0
+				}, 1000);
+				return false;
+			});
+		});
+	</script>
+
+</body>
+
+</html>
